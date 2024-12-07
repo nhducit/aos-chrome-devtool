@@ -1,11 +1,6 @@
 import { combineLatest, filter } from "rxjs";
 import { appEventSubject } from "./app-event-subject";
-import { router } from "../router";
 import { shouldStartMfaChallenge } from "./mfa";
-
-// listen the subject
-// combineLast these 2 events are triggered together, then open https://www.google.com/
-// init_shopping_cart, checkout
 
 combineLatest([
   appEventSubject.pipe(

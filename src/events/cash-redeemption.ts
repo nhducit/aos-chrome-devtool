@@ -1,6 +1,5 @@
 import { combineLatest, filter } from "rxjs";
 import { appEventSubject } from "./app-event-subject";
-import { router } from "../router";
 import { shouldStartMfaChallenge } from "./mfa";
 
 combineLatest([
