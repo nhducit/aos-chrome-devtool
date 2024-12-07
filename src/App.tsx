@@ -1,35 +1,39 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        <div className="mb-8 text-left whitespace-pre-line">
+          After opening the stackblitz.com link, open the preview window in new tab.
+        </div>
+
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      {/* <img className="w-[700px] mb-8" src="/preview.jpg" /> */}
+
+
+
+      <div className="mb-2 text-left whitespace-pre-line">
+        When we clicked the button below, I expected the browser to open https://www.google.com/. However, it actually opened https://www.ascenda.com/ instead.
+
+        <div className="rounded p-4 bg-gray-300 whitespace-pre">
+
+        </div>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }
 
+// element.addEventListener("click", () => {
+//   window.location.href = "https://www.google.com/";
+//   setTimeout(() => {
+//           // My hypothesis:
+//           // 1. That DevTools is already disconnected at this line "window.location.href = 'https://www.google.com/';"
+//           // so the Chrome DevTools won't pause execution for "debugger".
+//           debugger;
+//           // 2. The front-end application is not destroyed immediately after that. This is why the following lines are still executed.
+//           window.location.href = "https://www.ascenda.com/";
+//   }, 0);
+// });
 export default App
