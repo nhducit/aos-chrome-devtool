@@ -13,13 +13,13 @@ dependencies:
     version: 4.0.0-beta.6(vite@6.0.3)
   '@tanstack/react-router':
     specifier: ^1.86.1
-    version: 1.86.1(react-dom@18.3.1)(react@18.3.1)
+    version: 1.86.1(react-dom@19.0.0)(react@19.0.0)
   react:
-    specifier: ^18.3.1
-    version: 18.3.1
+    specifier: ^19.0.0
+    version: 19.0.0
   react-dom:
-    specifier: ^18.3.1
-    version: 18.3.1(react@18.3.1)
+    specifier: ^19.0.0
+    version: 19.0.0(react@19.0.0)
   rxjs:
     specifier: ^7.8.1
     version: 7.8.1
@@ -36,7 +36,7 @@ devDependencies:
     version: 9.16.0
   '@tanstack/router-devtools':
     specifier: ^1.86.1
-    version: 1.86.1(@tanstack/react-router@1.86.1)(csstype@3.1.3)(react-dom@18.3.1)(react@18.3.1)
+    version: 1.86.1(@tanstack/react-router@1.86.1)(csstype@3.1.3)(react-dom@19.0.0)(react@19.0.0)
   '@tanstack/router-plugin':
     specifier: ^1.86.0
     version: 1.86.0(vite@6.0.3)
@@ -1217,7 +1217,7 @@ packages:
     resolution: {integrity: sha512-62z1qXIILvjdkQyMTVPFQedHOc6kQgunz9GHV9jSy2z1ixsDqyI9GxNj3AWx8Ucmhjwd5/P+v3XN10bsb+FzRA==}
     engines: {node: '>=12'}
 
-  /@tanstack/react-router@1.86.1(react-dom@18.3.1)(react@18.3.1):
+  /@tanstack/react-router@1.86.1(react-dom@19.0.0)(react@19.0.0):
     resolution: {integrity: sha512-n9/nb00S1vDvsKv4hC5AWTZ0TRIJYakTwOwcoeRttpB/47/mLBNSs64dPYPzm2K7oukTieqG5zeSkPIt1T/beA==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -1229,25 +1229,25 @@ packages:
         optional: true
     dependencies:
       '@tanstack/history': 1.85.3
-      '@tanstack/react-store': 0.6.1(react-dom@18.3.1)(react@18.3.1)
+      '@tanstack/react-store': 0.6.1(react-dom@19.0.0)(react@19.0.0)
       jsesc: 3.0.2
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
       tiny-invariant: 1.3.3
       tiny-warning: 1.0.3
 
-  /@tanstack/react-store@0.6.1(react-dom@18.3.1)(react@18.3.1):
+  /@tanstack/react-store@0.6.1(react-dom@19.0.0)(react@19.0.0):
     resolution: {integrity: sha512-6gOopOpPp1cAXkEyTEv6tMbAywwFunvIdCKN/SpEiButUayjXU+Q5Sp5Y3hREN3VMR4OA5+RI5SPhhJoqP9e4w==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     dependencies:
       '@tanstack/store': 0.6.0
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-      use-sync-external-store: 1.4.0(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
+      use-sync-external-store: 1.4.0(react@19.0.0)
 
-  /@tanstack/router-devtools@1.86.1(@tanstack/react-router@1.86.1)(csstype@3.1.3)(react-dom@18.3.1)(react@18.3.1):
+  /@tanstack/router-devtools@1.86.1(@tanstack/react-router@1.86.1)(csstype@3.1.3)(react-dom@19.0.0)(react@19.0.0):
     resolution: {integrity: sha512-X5MzhGTrpI1ISSv85nfhcmGYStqD2NgO0tVZihyv2g/UHl7uj9jM+3tpwzQvLTW6dd0RNjn6wQ1GCd6fsUeSqg==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -1255,11 +1255,11 @@ packages:
       react: '>=18'
       react-dom: '>=18'
     dependencies:
-      '@tanstack/react-router': 1.86.1(react-dom@18.3.1)(react@18.3.1)
+      '@tanstack/react-router': 1.86.1(react-dom@19.0.0)(react@19.0.0)
       clsx: 2.1.1
       goober: 2.1.16(csstype@3.1.3)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
+      react: 19.0.0
+      react-dom: 19.0.0(react@19.0.0)
     transitivePeerDependencies:
       - csstype
     dev: true
@@ -2084,6 +2084,7 @@ packages:
 
   /js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    dev: true
 
   /js-yaml@4.1.0:
     resolution: {integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==}
@@ -2248,12 +2249,6 @@ packages:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
 
-  /loose-envify@1.4.0:
-    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
-    hasBin: true
-    dependencies:
-      js-tokens: 4.0.0
-
   /lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
     dependencies:
@@ -2387,20 +2382,17 @@ packages:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
     dev: true
 
-  /react-dom@18.3.1(react@18.3.1):
-    resolution: {integrity: sha512-5m4nQKp+rZRb09LNH59GM4BxTh9251/ylbKIbpe7TpGxfJ+9kv6BLkLBXIjjspbgbnIBNqlI23tRnTWT0snUIw==}
+  /react-dom@19.0.0(react@19.0.0):
+    resolution: {integrity: sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==}
     peerDependencies:
-      react: ^18.3.1
+      react: ^19.0.0
     dependencies:
-      loose-envify: 1.4.0
-      react: 18.3.1
-      scheduler: 0.23.2
+      react: 19.0.0
+      scheduler: 0.25.0
 
-  /react@18.3.1:
-    resolution: {integrity: sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==}
+  /react@19.0.0:
+    resolution: {integrity: sha512-V8AVnmPIICiWpGfm6GLzCR/W5FXLchHop40W4nXBmdlEceh16rCN8O8LNWm5bh5XUX91fh7KpA+W0TgMKmgTpQ==}
     engines: {node: '>=0.10.0'}
-    dependencies:
-      loose-envify: 1.4.0
 
   /readdirp@3.6.0:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
@@ -2463,10 +2455,8 @@ packages:
       tslib: 2.8.1
     dev: false
 
-  /scheduler@0.23.2:
-    resolution: {integrity: sha512-UOShsPwz7NrMUqhR6t0hWjFduvOzbtv7toDH1/hIrfRNIDBnnBWd0CwJTGvTpngVlmwGCdP9/Zl/tVrDqcuYzQ==}
-    dependencies:
-      loose-envify: 1.4.0
+  /scheduler@0.25.0:
+    resolution: {integrity: sha512-xFVuu11jh+xcO7JOAGJNOXld8/TcEHK/4CituBUeUb5hqxJLj9YuemAEuvm9gQ/+pgXYfbQuqAkiYu+u7YEsNA==}
 
   /semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
@@ -2616,12 +2606,12 @@ packages:
       punycode: 2.3.1
     dev: true
 
-  /use-sync-external-store@1.4.0(react@18.3.1):
+  /use-sync-external-store@1.4.0(react@19.0.0):
     resolution: {integrity: sha512-9WXSPC5fMv61vaupRkCKCxsPxBocVnwakBEkMIHHpkTTg6icbJtg6jzgtLDm4bl3cSHAca52rYWih0k4K3PfHw==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     dependencies:
-      react: 18.3.1
+      react: 19.0.0
 
   /valibot@1.0.0-beta.9(typescript@5.6.3):
     resolution: {integrity: sha512-yEX8gMAZ2R1yI2uwOO4NCtVnJQx36zn3vD0omzzj9FhcoblvPukENIiRZXKZwCnqSeV80bMm8wNiGhQ0S8fiww==}
