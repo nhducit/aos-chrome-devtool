@@ -18,12 +18,18 @@ function MFA() {
   return (
     <div className="p-2">
       {
-        type === 'cash_redemption' ? <h1>MFA Challenge for Cash Redemption</h1> : <h1>MFA Challenge for Shopping Cart</h1>
+        type === 'cash_redemption' ? <h1
+          className='text-2xl font-bold'
+        >MFA Challenge for Cash Redemption</h1> : <h1
+          className='text-2xl font-bold'
+        >MFA Challenge for Shopping Cart</h1>
       }
+      <p>
+        This is a MFA challenge page in another FE application. For the sake of this demo, we will have it in the same FE application.
+      </p>
 
       <Button
         onClick={() => {
-          // appEventSubject.next({ type: 'mfa_success' })
           if (type === 'cash_redemption') {
             navigate({ to: '/cash-redemption', search: { status: 'success' } })
           } else {

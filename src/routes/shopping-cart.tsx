@@ -21,29 +21,38 @@ function ShoppingCart() {
   return (
     <div className="p-2">
       {
-        status === 'init' ? <h1>Shopping Cart</h1> : <h1>Shopping Cart Success</h1>
+        status === 'init' ? <h1
+          className='text-2xl font-bold'
+        >Shopping Cart</h1> : <h1
+          className='text-2xl font-bold'
+        >Shopping Cart Success</h1>
       }
 
       {
         status === 'init' ? (
-          <div>
-            <Button
-              onClick={() => {
-                setIsReady(true)
-              }}
-            >
-              Init Cash Redemption
-            </Button>
-            <Button
-              onClick={() => {
-                appEventSubject.next({
-                  type: "attempt_checkout_shopping_cart",
-                });
-              }}
-              disabled={!isReady}
-            >
-              Checkout
-            </Button>
+          <div className='mt-8'>
+            <div className='flex flex-col gap-2 w-[300px]'>
+              <Button
+                onClick={() => {
+                  setIsReady(true)
+                  appEventSubject.next({
+                    type: "init_checkout_shopping_cart",
+                  });
+                }}
+              >
+                Init Shopping Cart
+              </Button>
+              <Button
+                onClick={() => {
+                  appEventSubject.next({
+                    type: "attempt_checkout_shopping_cart",
+                  });
+                }}
+                disabled={!isReady}
+              >
+                Checkout
+              </Button>
+            </div>
           </div>
         ) : null
       }
